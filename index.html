@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>元玺 v1.8.1 更新日志预览</title>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<style>
+  * { box-sizing: border-box; }
+  body { margin:0; background:#f3f5fa; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",sans-serif; color:#252938; }
+  .meta { max-width:948px; margin:32px auto 0; padding:26px 32px; background:linear-gradient(135deg,#172b72,#6546d7); border-radius:18px; color:#fff; box-shadow:0 12px 34px rgba(41,45,122,.2); }
+  .meta h1 { margin:0 0 9px; font-size:28px; line-height:1.35; }
+  .meta p { margin:5px 0; font-size:15px; line-height:1.7; opacity:.94; }
+  .meta .tag { display:inline-block; background:rgba(255,255,255,.18); border:1px solid rgba(255,255,255,.2); border-radius:999px; padding:3px 11px; font-size:12px; margin:9px 7px 0 0; }
+  .card { max-width:948px; margin:20px auto 64px; background:#fff; border-radius:18px; padding:40px 50px; box-shadow:0 6px 30px rgba(52,59,105,.09); line-height:1.8; }
+  .card > h2:first-child { margin-top:0; font-size:28px; border-bottom:none; }
+  .card img { max-width:100%; border-radius:12px; display:block; margin:22px auto 28px; box-shadow:0 4px 18px rgba(45,59,125,.13); }
+  .card img.scenario-image { max-width:94%; border:1px solid #e8ebf6; box-shadow:0 3px 14px rgba(45,59,125,.09); }
+  .card h2 { border-bottom:1px solid #e9ebf3; padding-bottom:10px; margin-top:44px; line-height:1.45; }
+  .card h2.core-heading { border:0; border-left:5px solid #5368f5; border-radius:10px; padding:12px 16px; background:linear-gradient(90deg,#eef2ff 0%,#f8f6ff 68%,#fff 100%); color:#172b72; }
+  .card h2.important-heading { color:#33417d; border-bottom:2px solid #dfe4f8; }
+  .card h3 { margin-top:30px; color:#28345f; }
+  .card h4 { margin:28px 0 10px; color:#3a4380; font-size:17px; }
+  .card p { margin:11px 0; }
+  .card hr { border:none; border-top:1px solid #e9ebf3; margin:38px 0; }
+  .card li { margin:7px 0; }
+  .card strong { color:#253a9b; }
+  @media (max-width: 720px) {
+    .meta { margin:16px 14px 0; padding:22px; border-radius:14px; }
+    .meta h1 { font-size:23px; }
+    .card { margin:14px 14px 40px; padding:26px 20px; border-radius:14px; }
+    .card > h2:first-child { font-size:24px; }
+    .card h2 { font-size:21px; }
+    .card img.scenario-image { max-width:100%; }
+  }
+</style>
+</head>
+<body>
+<header class="meta">
+  <h1>Agent 档位选择与任务 Web Push 通知</h1>
+  <p>按任务难度选用元玺 Lite、Pro、Max；任务完成后可通过浏览器推送提醒，离开页面也不容易错过结果。</p>
+  <div><span class="tag">v1.8.1</span><span class="tag">2026.09.11</span><span class="tag">功能更新</span></div>
+</header>
+<main class="card" id="content"></main>
+<script>
+const md = `## 元玺 v1.8.1 更新日志
+
+![元玺 v1.8.1 封面图](images/1.8.1_cover.png?v=10)
+
+本次更新的重点是 **Agent 档位选择**：可以按任务难度选用元玺 Lite、Pro 或 Max，日常轻量任务不必占用高档能力。同时接入 **任务 Web Push 通知**，任务完成后浏览器会提醒你，不必一直守在页面前。
+
+### 本次两项核心升级
+
+1. **Agent 档位选择**：按任务轻重选用 Lite、Pro、Max 三档。
+2. **任务 Web Push 通知**：任务完成时，即使当前标签页不在前台，浏览器也会弹出提醒。
+
+---
+
+## ✨ 核心升级一：Agent 档位选择
+
+### 按任务难度选档，不必一律拉满
+
+![Agent 档位选择配图](images/1.8.1_content_1.png?v=13)
+
+不是每一件事都需要最强的执行力度。整理纪要、改一封邮件，和做一份高难度方案、跑复杂推演，所需的能力并不一样。
+
+现在可以在对话中选择 Agent 档位：
+
+- **元玺 Lite**：适合日常任务的轻量档
+- **元玺 Pro**：适合大多数复杂任务
+- **元玺 Max**：面向高难复杂任务的高性能档
+
+日常工作用 Lite 即可完成，真正难的任务再切到 Pro 或 Max。
+
+#### 真实场景：上午三件小事，下午一份硬仗
+
+![Agent 档位选择场景案例](images/1.8.1_content_2.png?v=10)
+
+上午要整理会议纪要、改一段对外邮件、把几条待办写成清单。这些用 Lite 就能完成，也更合适。
+
+下午要做一份面向管理层的复杂方案，约束多、材料杂、容错空间小。这时切到 Max，把推理和执行交给更高性能档。
+
+不必为每件事都开到最高档，也不必在难任务上委屈使用轻量能力。
+
+#### 轻量任务用 Lite，消耗通常也更低
+
+![同一任务三档积分对照](images/1.8.1_content_5.png?v=10)
+
+档位越高，同一件事通常越费积分。用同一条「整理会议纪要」做过一次对照，方便感受量级：Lite 大约 0.2 积分，Pro 大约是它的 2 倍，Max 大约是 8 倍。
+
+这只是一次轻量任务的参考，不是固定单价。内容、工具调用、对话轮次不同，消耗都会变，**实际以当次任务为准**。
+
+#### 这些时候可以这样选档
+
+- **Lite**：纪要整理、格式调整、短文改写、日常问答。
+- **Pro**：大多数方案撰写、PPT 制作、常规分析与研究。
+- **Max**：高难度推演、多约束规划、长链路复杂任务。
+
+#### 功能特点
+
+- **三档可选**：Lite、Pro、Max，能力和定位一眼能看清。
+- **按任务切换**：不同任务可以选用不同档位。
+- **按需更省积分**：轻量任务用 Lite 即可，不必默认开到 Max。
+
+---
+
+## ✨ 核心升级二：任务 Web Push 通知
+
+### 任务还在跑，人可以先去忙别的
+
+![任务 Web Push 通知配图](images/1.8.1_content_3.png?v=10)
+
+做一份 PPT、写一篇长报告、跑一轮决策推演，往往需要一段时间。过去只能把页面开着，或过一会儿再回来看有没有做完。
+
+现在可以开启任务的 Web Push 通知。任务完成后，浏览器会弹出提醒。即使你已经切去处理别的事情，也不容易错过结果。
+
+#### 真实场景：报告还在生成，先去开了个会
+
+![任务 Web Push 通知场景案例](images/1.8.1_content_4.png?v=10)
+
+你让元玺撰写一份行业研究报告。任务已经开始，但还要一会儿才能完成。过去只能把对话页留在桌面，或过一会儿再回来刷新。
+
+现在开启通知后，可以先去开会或处理别的事。报告完成后，浏览器会提醒你。点开通知就能回到任务，查看结果或继续补充要求。
+
+#### 这些时候也适合打开通知
+
+- **生成 PPT**：多页演示文稿需要较长时间，做完再回来查看。
+- **撰写长文档**：报告、方案正在生成时，不必一直守在对话页。
+- **决策推演**：推演还在进行，先去核对数据或开会。
+- **浏览器任务**：连接器正在操作网页流程，完成后需要你接手。
+
+#### 功能特点
+
+- **完成即提醒**：任务结束后发出通知，不用反复回来查看进度。
+- **离开页面也能收到**：当前标签不在前台时，通知仍然有效。
+- **点开回到任务**：从通知直接回到对应会话，接着查看结果。
+
+---
+
+感谢每一位用户的信任与支持 ❤️
+
+**元玺，让 AI 成为你的超能力。**
+`;
+
+const content = document.getElementById('content');
+content.innerHTML = marked.parse(md);
+content.querySelectorAll('h2').forEach((heading) => {
+  if (heading.textContent.includes('核心升级')) heading.classList.add('core-heading');
+  if (heading.textContent.includes('重要体验升级')) heading.classList.add('important-heading');
+});
+content.querySelectorAll('img').forEach((img) => {
+  if (img.alt.includes('场景案例')) img.classList.add('scenario-image');
+});
+</script>
+</body>
+</html>
